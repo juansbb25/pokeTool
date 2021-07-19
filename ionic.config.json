@@ -1,0 +1,7 @@
+{
+  "name": "PokeTool",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
