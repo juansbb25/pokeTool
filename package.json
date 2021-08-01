@@ -8,8 +8,10 @@
     "@capacitor/haptics": "1.0.2",
     "@capacitor/keyboard": "1.0.2",
     "@capacitor/status-bar": "1.0.2",
+    "@craco/craco": "^6.2.0",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
+    "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
@@ -17,11 +19,15 @@
     "@types/node": "^12.19.15",
     "@types/react": "^16.14.3",
     "@types/react-dom": "^16.9.10",
+    "@types/react-redux": "^7.1.18",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
-    "ionicons": "^5.4.0",
+    "axios": "^0.21.1",
+    "ionicons": "^5.5.2",
+    "material-icons": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
@@ -41,10 +47,11 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts}' --quiet --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +72,19 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.1.1"
+    "@capacitor/cli": "3.1.1",
+    "@ionic/eslint-plugin": "^0.0.1",
+    "@ionic/prettier-config": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "postcss": "^7.0.36",
+    "prettier": "^2.3.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   },
   "description": "An Ionic project"
 }
